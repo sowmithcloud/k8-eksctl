@@ -5,6 +5,12 @@ metadata:
   name: roboshop
   region: us-east-1
 
+vpc:
+  subnets:
+    private:
+      us-east-1c: { id: subnet-0eab70e5630ffeb90 }
+      us-east-1d: { id: subnet-08b3be86e0e3571e0 }
+
 managedNodeGroups:
   - name: spot
     instanceType: t3.small

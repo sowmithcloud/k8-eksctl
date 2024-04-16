@@ -18,6 +18,7 @@ module "ec2_instance" {
 resource "aws_security_group" "allow_eksctl" {
   name        = "allow_eksctl"
   description = "created for eksctl"
+  vpc_id = "vpc-046b73d92eb13604b"
   tags = {
     Name = "allow_eksctl"
   }
